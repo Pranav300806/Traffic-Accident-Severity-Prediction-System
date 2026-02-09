@@ -1,68 +1,162 @@
-# 🚗 Traffic Congestion Prediction using Machine Learning
+🚦 Traffic Accident Severity Predictor (ML Web App)
 
-This project predicts traffic congestion levels (Low / Medium / High) using machine learning based on traffic conditions.
+An end-to-end Machine Learning web application that predicts traffic accident severity (1–4) using weather and time-based features.
 
----
+This project demonstrates the complete ML pipeline from data preprocessing → model training → API development → frontend integration.
 
-## 📌 Problem Statement
-Urban traffic congestion increases travel time, fuel consumption and pollution.  
-This project builds an ML model to predict congestion level using traffic parameters.
+📌 Problem Statement
 
----
+Road accidents cause injuries, traffic delays and economic loss.
+Predicting accident severity in advance can help authorities and drivers take preventive actions.
 
-## 📊 Features Used
-- Vehicle Count
-- Average Speed
-- Time of Day
-- Day of Week
+This project builds a machine learning model to predict accident severity based on environmental conditions.
+
+📊 Dataset
+
+Dataset used: US Accidents (2016–2023)
+Source: Kaggle
+
+Features used from dataset:
+
+Start Time (converted to Hour)
+
+Temperature (F)
+
+Visibility (miles)
+
+Wind Speed (mph)
+
+Humidity (%)
 
 Target:
-- Congestion Level (Low / Medium / High)
 
----
+Accident Severity (1 to 4)
 
-## 🤖 Machine Learning Models
-- Random Forest Classifier
-- Histogram Gradient Boosting Classifier
+🤖 Machine Learning Model
 
----
+Model used:
 
-## ⚙️ ML Pipeline
-1. Data preprocessing
-2. Feature encoding
-3. Model training
-4. Model evaluation
-5. Model saving
+Random Forest Classifier
 
----
+Why Random Forest?
 
-## 📈 Results
-Best Model Accuracy: **~40%**
+Works well on tabular data
 
-⚠️ Note: Dataset is synthetic and small.  
-This project focuses on **ML pipeline demonstration**.
+Handles non-linear relationships
 
----
+Good baseline for real-world prediction
 
-## 🛠 Tech Stack
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
+⚙️ ML Pipeline
 
----
+1️⃣ Load dataset
+2️⃣ Clean and preprocess data
+3️⃣ Convert time → hour feature
+4️⃣ Train/Test split
+5️⃣ Train RandomForest model
+6️⃣ Save trained model (.pkl)
+7️⃣ Build Flask API for predictions
+8️⃣ Integrate frontend UI with API
 
-## ▶️ How to Run
-```bash
-pip install -r requirements.txt
-python src/Traffic_congestion.py
+🧠 Input Features for Prediction
 
-## 📸 Project Screenshots
+The web app accepts:
 
-### Web Interface & Prediction Result
+Feature	Description
+Temperature	Weather temperature
+Visibility	Visibility in miles
+Wind Speed	Wind speed
+Humidity	Humidity percentage
+Hour	Time of day (0–23)
 
-## 📸 Project UI
+Output:
+👉 Predicted Accident Severity (1–4)
 
-![Traffic App UI](frontend/ui.png)
+🌐 Web Application
+
+The project includes:
+
+✔️ Trained ML model
+✔️ Flask REST API
+✔️ Frontend UI for user input
+✔️ Real-time predictions
+
+📸 Project UI
+![UI](frontend/UI.png)
+
+🛠 Tech Stack
+
+Backend
+
+Python
+
+Pandas
+
+Scikit-learn
+
+Flask
+
+Joblib
+
+Frontend
+
+HTML
+
+CSS
+
+JavaScript
+
+▶️ How to Run Locally
+1️⃣ Train the model
+python backend/model/train_model.py
+
+2️⃣ Run Flask API
+cd backend
+python app.py
+
+
+Server runs at:
+
+http://127.0.0.1:5000
+
+3️⃣ Open Frontend
+
+Open frontend/index.html in browser.
+
+🔌 API Endpoint
+
+POST /predict
+
+Example request:
+
+{
+  "temperature":70,
+  "visibility":5,
+  "wind_speed":10,
+  "humidity":60,
+  "hour":14
+}
+
+
+Example response:
+
+{
+  "severity": 3
+}
+
+🎯 Project Highlights
+
+End-to-end ML project
+
+Real dataset (large scale)
+
+REST API integration
+
+Frontend + Backend connection
+
+Ready for deployment
+
+👨‍💻 Author
+
+Pranav
 
 
