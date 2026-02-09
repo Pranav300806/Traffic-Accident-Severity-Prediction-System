@@ -57,3 +57,12 @@ This project focuses on **ML pipeline demonstration**.
 pip install -r requirements.txt
 python src/Traffic_congestion.py
 
+## 📸 Project Screenshots
+
+### Web Interface & Prediction Result
+
+## 📸 Project UI
+
+![Traffic App UI](frontend/ui.png)
+
+
