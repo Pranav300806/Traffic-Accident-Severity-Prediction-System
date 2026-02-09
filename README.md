@@ -1,42 +1,58 @@
-# Traffic Congestion Prediction using Machine Learning
+# 🚗 Traffic Congestion Prediction using Machine Learning
 
-## 📌 Project Overview
-This project predicts traffic congestion levels (Low, Medium, High) using
-machine learning techniques based on traffic-related features.
+This project predicts traffic congestion levels (Low / Medium / High) using machine learning based on traffic conditions.
 
-## 📊 Dataset
-Synthetic dataset containing:
+---
+
+## 📌 Problem Statement
+Urban traffic congestion increases travel time, fuel consumption and pollution.  
+This project builds an ML model to predict congestion level using traffic parameters.
+
+---
+
+## 📊 Features Used
 - Vehicle Count
 - Average Speed
 - Time of Day
 - Day of Week
-- Congestion Level (Target)
 
-Dataset size: 100 records
+Target:
+- Congestion Level (Low / Medium / High)
 
-## 🧠 Machine Learning Models Used
+---
+
+## 🤖 Machine Learning Models
 - Random Forest Classifier
-- Histogram-based Gradient Boosting Classifier
+- Histogram Gradient Boosting Classifier
 
-## ⚙️ Workflow
-1. Data Collection
-2. Data Preprocessing
-3. Feature Encoding
-4. Model Training
-5. Model Evaluation
-6. Model Saving
+---
+
+## ⚙️ ML Pipeline
+1. Data preprocessing
+2. Feature encoding
+3. Model training
+4. Model evaluation
+5. Model saving
+
+---
 
 ## 📈 Results
-- Best Model Accuracy: ~40%
-- Performance limited due to small synthetic dataset
+Best Model Accuracy: **~40%**
 
-## 📦 Libraries Used
-- pandas
-- numpy
-- scikit-learn
-- joblib
+⚠️ Note: Dataset is synthetic and small.  
+This project focuses on **ML pipeline demonstration**.
 
-## 🚀 How to Run
+---
+
+## 🛠 Tech Stack
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+
+---
+
+## ▶️ How to Run
 ```bash
 pip install -r requirements.txt
 python src/Traffic_congestion.py
