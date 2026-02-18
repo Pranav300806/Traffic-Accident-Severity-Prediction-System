@@ -18,33 +18,33 @@ Source: Kaggle
 
 Features used from dataset:
 
-Start Time (converted to Hour)
+- Start Time (converted to Hour)
 
-Temperature (F)
+- Temperature (F)
 
-Visibility (miles)
+- Visibility (miles)
 
-Wind Speed (mph)
+- Wind Speed (mph)
 
-Humidity (%)
+- Humidity (%)
 
-Target:
+- Target:
 
-Accident Severity (1 to 4)
+- Accident Severity (1 to 4)
 
 🤖 Machine Learning Model
 
 Model used:
 
-Random Forest Classifier
+- Random Forest Classifier
 
 Why Random Forest?
 
-Works well on tabular data
+- Works well on tabular data
 
-Handles non-linear relationships
+- Handles non-linear relationships
 
-Good baseline for real-world prediction
+- Good baseline for real-world prediction
 
 ⚙️ ML Pipeline
 
@@ -158,5 +158,6 @@ Ready for deployment
 👨‍💻 Author
 
 Pranav
+
 
 
