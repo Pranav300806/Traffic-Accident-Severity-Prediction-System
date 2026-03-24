@@ -1,17 +1,17 @@
-🚦 Traffic Accident Severity Predictor (ML Web App)
+Traffic Accident Severity Predictor (ML Web App)
 
 An end-to-end Machine Learning web application that predicts traffic accident severity (1–4) using weather and time-based features.
 
 This project demonstrates the complete ML pipeline from data preprocessing → model training → API development → frontend integration.
 
-📌 Problem Statement
+Problem Statement
 
 Road accidents cause injuries, traffic delays and economic loss.
 Predicting accident severity in advance can help authorities and drivers take preventive actions.
 
 This project builds a machine learning model to predict accident severity based on environmental conditions.
 
-📊 Dataset
+Dataset
 
 Dataset used: US Accidents (2016–2023)
 Source: Kaggle
@@ -32,7 +32,7 @@ Features used from dataset:
 
 - Accident Severity (1 to 4)
 
-🤖 Machine Learning Model
+Machine Learning Model
 
 Model used:
 
@@ -46,18 +46,18 @@ Why Random Forest?
 
 - Good baseline for real-world prediction
 
-⚙️ ML Pipeline
+ML Pipeline
 
-1️⃣ Load dataset
-2️⃣ Clean and preprocess data
-3️⃣ Convert time → hour feature
-4️⃣ Train/Test split
-5️⃣ Train RandomForest model
-6️⃣ Save trained model (.pkl)
-7️⃣ Build Flask API for predictions
-8️⃣ Integrate frontend UI with API
+Load dataset
+Clean and preprocess data
+Convert time → hour feature
+Train/Test split
+Train RandomForest model
+Save trained model (.pkl)
+Build Flask API for predictions
+Integrate frontend UI with API
 
-🧠 Input Features for Prediction
+Input Features for Prediction
 
 The web app accepts:
 
@@ -69,9 +69,9 @@ Humidity	Humidity percentage
 Hour	Time of day (0–23)
 
 Output:
-👉 Predicted Accident Severity (1–4)
+ Predicted Accident Severity (1–4)
 
-🌐 Web Application
+Web Application
 
 The project includes:
 
@@ -80,10 +80,10 @@ The project includes:
 ✔️ Frontend UI for user input
 ✔️ Real-time predictions
 
-📸 Project UI
+Project UI
 ![UI](frontend/UI.png)
 
-🛠 Tech Stack
+Tech Stack
 
 Backend
 
@@ -105,11 +105,11 @@ CSS
 
 JavaScript
 
-▶️ How to Run Locally
-1️⃣ Train the model
+How to Run Locally
+Train the model
 python backend/model/train_model.py
 
-2️⃣ Run Flask API
+Run Flask API
 cd backend
 python app.py
 
@@ -118,11 +118,11 @@ Server runs at:
 
 http://127.0.0.1:5000
 
-3️⃣ Open Frontend
+Open Frontend
 
 Open frontend/index.html in browser.
 
-🔌 API Endpoint
+API Endpoint
 
 POST /predict
 
@@ -143,7 +143,7 @@ Example response:
   "severity": 3
 }
 
-🎯 Project Highlights
+Project Highlights
 
 End-to-end ML project
 
@@ -155,9 +155,7 @@ Frontend + Backend connection
 
 Ready for deployment
 
-👨‍💻 Author
 
-Pranav
 
 
 
